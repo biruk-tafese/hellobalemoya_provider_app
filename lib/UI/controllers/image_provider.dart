@@ -32,7 +32,6 @@ class ImageUpoader extends ChangeNotifier {
       maxWidth: 1080,
       maxHeight: 1920,
       compressQuality: 80,
-      aspectRatioPresets: [CropAspectRatioPreset.ratio4x3],
       uiSettings: [
         AndroidUiSettings(
             toolbarTitle: 'Jobhub Cropper',

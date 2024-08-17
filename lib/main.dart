@@ -1,3 +1,4 @@
+import 'package:provider_app_orientation/UI/controllers/image_provider.dart';
 import 'package:provider_app_orientation/UI/editable/profile_edit.dart';
 import 'package:provider_app_orientation/UI/homepage.dart';
 import 'package:provider_app_orientation/UI/mainscreen.dart';
@@ -41,11 +42,11 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
         useInheritedMediaQuery: true,
         minTextAdapt: true,
-        designSize: Size(360, 690),
+        designSize: const Size(360, 690),
         builder: (context, child) {
           return GetMaterialApp(
             translations: LocalString(),
-            locale: Locale("en","US"),
+            locale: const Locale("en", "US"),
             debugShowCheckedModeBanner: false,
             title: 'Hello Balemuya',
             theme: ThemeData(
