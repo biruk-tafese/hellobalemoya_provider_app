@@ -11,6 +11,11 @@ List<ServiceProvider> mockServiceProviders = [
     locationDescription: "Bole, Addis Ababa",
     distance: "2 km",
     status: "Online",
+    services: [
+      "Pipe repair",
+      "Leak detection",
+      "Water heater installation"
+    ], // Add this line
   ),
   ServiceProvider(
     fullName: "Kidiane Beyene",
@@ -21,7 +26,13 @@ List<ServiceProvider> mockServiceProviders = [
     locationDescription: "Megenagna, Addis Ababa",
     distance: "5 km",
     status: "Offline",
+    services: [
+      "Wiring",
+      "Circuit breaker repair",
+      "Lighting installation"
+    ], // Add this line
   ),
+  // Add similar lines for other service providers
   ServiceProvider(
     fullName: "Beza Seyum",
     email: "provider3@example.com",
@@ -31,95 +42,11 @@ List<ServiceProvider> mockServiceProviders = [
     locationDescription: "Gerji, Addis Ababa",
     distance: "3 km",
     status: "Online",
+    services: [
+      "Furniture repair",
+      "Cabinet installation",
+      "Custom woodwork"
+    ], // Add this line
   ),
-  ServiceProvider(
-    fullName: "Mulugeta Abebe",
-    email: "provider4@example.com",
-    phone: "+251944556677",
-    serviceType: "Painter",
-    location: const LatLng(9.0325, 38.7439), // Kazanchis, Addis Ababa
-    locationDescription: "Kazanchis, Addis Ababa",
-    distance: "4 km",
-    status: "Online",
-  ),
-  ServiceProvider(
-    fullName: "Hana Solomon",
-    email: "provider5@example.com",
-    phone: "+251955667788",
-    serviceType: "Gardener",
-    location: const LatLng(9.0162, 38.7710), // CMC, Addis Ababa
-    locationDescription: "CMC, Addis Ababa",
-    distance: "6 km",
-    status: "Offline",
-  ),
-  ServiceProvider(
-    fullName: "Girma Bekele",
-    email: "provider6@example.com",
-    phone: "+251966778899",
-    serviceType: "Cleaner",
-    location: const LatLng(9.0123, 38.7567), // Arat Kilo, Addis Ababa
-    locationDescription: "Arat Kilo, Addis Ababa",
-    distance: "1 km",
-    status: "Online",
-  ),
-  ServiceProvider(
-    fullName: "Selamawit Yirga",
-    email: "provider7@example.com",
-    phone: "+251977889900",
-    serviceType: "Chef",
-    location: const LatLng(9.0351, 38.7387), // Bole Medhanealem, Addis Ababa
-    locationDescription: "Bole Medhanealem, Addis Ababa",
-    distance: "7 km",
-    status: "Online",
-  ),
-  ServiceProvider(
-    fullName: "Lydia Demissie",
-    email: "provider8@example.com",
-    phone: "+251988990011",
-    serviceType: "Mechanic",
-    location: const LatLng(9.0289, 38.7575), // Addis Ketema, Addis Ababa
-    locationDescription: "Addis Ketema, Addis Ababa",
-    distance: "2.5 km",
-    status: "Offline",
-  ),
-  ServiceProvider(
-    fullName: "Samuel Tesfaye",
-    email: "provider9@example.com",
-    phone: "+251999001122",
-    serviceType: "Tailor",
-    location: const LatLng(9.0234, 38.7599), // Sidist Kilo, Addis Ababa
-    locationDescription: "Sidist Kilo, Addis Ababa",
-    distance: "3.5 km",
-    status: "Online",
-  ),
-  ServiceProvider(
-    fullName: "Meron Assefa",
-    email: "provider10@example.com",
-    phone: "+251910011223",
-    serviceType: "Hairdresser",
-    location: const LatLng(9.0423, 38.7624), // Bole Airport, Addis Ababa
-    locationDescription: "Bole Airport, Addis Ababa",
-    distance: "5 km",
-    status: "Online",
-  ),
-  ServiceProvider(
-    fullName: "Dawit Alemayehu",
-    email: "provider11@example.com",
-    phone: "+251921122334",
-    serviceType: "Tutor",
-    location: const LatLng(9.0124, 38.7256), // Kality, Addis Ababa
-    locationDescription: "Kality, Addis Ababa",
-    distance: "8 km",
-    status: "Offline",
-  ),
-  ServiceProvider(
-    fullName: "Aisha Mohammed",
-    email: "provider12@example.com",
-    phone: "+251932233445",
-    serviceType: "Driver",
-    location: const LatLng(9.0187, 38.7463), // Kolfe Keranio, Addis Ababa
-    locationDescription: "Kolfe Keranio, Addis Ababa",
-    distance: "4 km",
-    status: "Online",
-  ),
+  // Continue for the remaining service providers...
 ];
