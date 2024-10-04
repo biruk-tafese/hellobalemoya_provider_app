@@ -1,5 +1,6 @@
 import 'package:provider_app_orientation/UI/auth/forgot_password.dart';
 import 'package:provider_app_orientation/UI/auth/signup.dart';
+import 'package:provider_app_orientation/UI/homepage.dart';
 import 'package:provider_app_orientation/UI/search/widgets/custom_field.dart';
 
 import 'package:provider_app_orientation/constants/app_constants.dart';
@@ -16,6 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_app_orientation/controllers/login_controller.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -155,9 +157,20 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   const HeightSpacer(size: 30),
                   CustomButton(
-                    onTap: () {
-                      LoginNotifier.rolePage = phone.text;
-                      Get.to(LoginNotifier.rolePage);
+                    onTap: () async {
+                      final controller =
+                          LoginController(baseUrl: 'http://localhost:5000');
+                      final serviceProvider = await controller
+                          .loginServiceProvider(email.text, password.text);
+                      if (serviceProvider != null) {
+                        // Proceed with successful login, e.g., navigate to the home page
+                        Get.to(
+                            const HomePage()); // Adjust this to your actual home page
+                      } else {
+                        // Show an error message
+                        Get.snackbar("Error",
+                            "Invalid email or password"); // Display a snack bar
+                      }
                     },
                     text: "login".tr,
                     size: headersize,
@@ -166,29 +179,6 @@ class _LoginPageState extends State<LoginPage> {
                     height: loginheight,
                     bcolor: Color(kBlue.value),
                   ),
-                  const HeightSpacer(size: 14),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      ReusableText(
-                        text: "notmember".tr,
-                        style: appstyle(headersize - 4, Color(kDarkGrey.value),
-                            FontWeight.w400),
-                      ),
-                      const WidthSpacer(size: 15),
-                      GestureDetector(
-                        onTap: () {
-                          Get.to(() => const RegistrationPage());
-                        },
-                        child: ReusableText(
-                          text: "signup".tr,
-                          style: appstyle(headersize - 3, Color(kOrange.value),
-                              FontWeight.w500),
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               ),
             ),

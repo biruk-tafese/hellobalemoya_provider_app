@@ -1,14 +1,12 @@
-// controllers/service_provider_controller.dart
-
 import 'dart:convert';
+import 'package:provider_app_orientation/models/serviceprovider_model.dart';
 // ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
-import 'package:provider_app_orientation/models/serviceprovider_model.dart';
 
-class ServiceProviderController {
+class LoginController {
   final String baseUrl; // Your backend base URL
 
-  ServiceProviderController({required this.baseUrl});
+  LoginController({required this.baseUrl});
 
   // Login for service provider ServiceProvider
   Future<ServiceProvider?> loginServiceProvider(
