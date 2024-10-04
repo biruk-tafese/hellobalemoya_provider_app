@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
         pagepadding = 10;
         loginheight = 60;
       } else {
-                loginheight = 80;
+        loginheight = 80;
         toolbarheight = 85.h;
         headersize = 11;
         loginwidth = 300;
@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
     } else {
       if (orientaion == Orientation.portrait) {
         headersize = 20;
-                loginheight = 60;
+        loginheight = 60;
         loginwidth = 300;
         pagepadding = 90;
         toolbarheight = 55.h;
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
         toolbarheight = 75.h;
         headersize = 15;
         loginwidth = 300;
-                loginheight = 60;
+        loginheight = 60;
         pagepadding = 200;
       }
     }
@@ -95,12 +95,12 @@ class _LoginPageState extends State<LoginPage> {
               reverse: true,
               child: Column(
                 children: [
-                  HeightSpacer(size: 50),
+                  const HeightSpacer(size: 50),
                   ReusableText(
                       text: "login".tr,
                       style: appstyle(
                           headersize + 9, Color(kBlue.value), FontWeight.w500)),
-                  HeightSpacer(size: 50),
+                  const HeightSpacer(size: 50),
                   CustomField(
                     hintText: "mobilenumber".tr,
                     keyboard: TextInputType.text,
@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                       }
                     },
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomField(
                     hintText: "password".tr,
                     obscureText: LoginNotifier.obsecureText,
@@ -139,12 +139,12 @@ class _LoginPageState extends State<LoginPage> {
                       }
                     },
                   ),
-                  HeightSpacer(size: 10),
+                  const HeightSpacer(size: 10),
                   Align(
                     alignment: Alignment.centerRight,
                     child: GestureDetector(
                       onTap: () {
-                        Get.to(ForgotPassword());
+                        Get.to(const ForgotPassword());
                       },
                       child: ReusableText(
                         text: "forgotpassword".tr,
@@ -153,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  HeightSpacer(size: 30),
+                  const HeightSpacer(size: 30),
                   CustomButton(
                     onTap: () {
                       LoginNotifier.rolePage = phone.text;
@@ -166,25 +166,25 @@ class _LoginPageState extends State<LoginPage> {
                     height: loginheight,
                     bcolor: Color(kBlue.value),
                   ),
-                  HeightSpacer(size: 14),
+                  const HeightSpacer(size: 14),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       ReusableText(
                         text: "notmember".tr,
-                        style: appstyle(
-                            headersize-4, Color(kDarkGrey.value), FontWeight.w400),
+                        style: appstyle(headersize - 4, Color(kDarkGrey.value),
+                            FontWeight.w400),
                       ),
-                      WidthSpacer(size: 15),
+                      const WidthSpacer(size: 15),
                       GestureDetector(
                         onTap: () {
                           Get.to(() => const RegistrationPage());
                         },
                         child: ReusableText(
                           text: "signup".tr,
-                          style: appstyle(
-                              headersize-3, Color(kOrange.value), FontWeight.w500),
+                          style: appstyle(headersize - 3, Color(kOrange.value),
+                              FontWeight.w500),
                         ),
                       ),
                     ],

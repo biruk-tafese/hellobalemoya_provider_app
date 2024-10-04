@@ -68,18 +68,18 @@ class _PostedOrdersState extends State<PostedOrders> {
         alignment: Alignment.bottomCenter,
         child: ElevatedButton(
             style: ButtonStyle(
-                padding: WidgetStatePropertyAll(
+                padding: const WidgetStatePropertyAll(
                     EdgeInsets.symmetric(vertical: 15, horizontal: 34)),
                 backgroundColor: WidgetStatePropertyAll(Color(kBlue.value))),
             onPressed: () {
-              Get.to(MyOrders());
+              Get.to(const MyOrders());
             },
             child: Text(
               "Apply to this",
               style: appstyle(headersize + 4, Colors.white, FontWeight.normal),
             )),
       ),
-      backgroundColor: Color.fromARGB(255, 249, 249, 249),
+      backgroundColor: const Color.fromARGB(255, 249, 249, 249),
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -108,13 +108,13 @@ class _PostedOrdersState extends State<PostedOrders> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    HeightSpacer(size: 8),
+                    const HeightSpacer(size: 8),
                     ReusableText(
                       text: "Fix the water faucet",
                       style: appstyle(
                           headersize + 4, Colors.black, FontWeight.w400),
                     ),
-                    HeightSpacer(size: 10),
+                    const HeightSpacer(size: 10),
                     SizedBox(
                       child: Text(
                           overflow: null,
@@ -122,50 +122,50 @@ class _PostedOrdersState extends State<PostedOrders> {
                           style: appstyle(headersize - 2, Color(kDark.value),
                               FontWeight.normal)),
                     ),
-                    HeightSpacer(size: 20),
+                    const HeightSpacer(size: 20),
                     ReusableText(
                       text: "Applicants for this problem  ",
                       style: appstyle(
                           headersize + 4, Colors.black, FontWeight.w400),
                     ),
                     const HeightSpacer(size: 15),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/face1.jpg",
                       name: "Seid",
                       rating: "5",
                       ratingcount: "344",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",
                       ratingcount: "43",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",
                       ratingcount: "43",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",
                       ratingcount: "43",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",
                       ratingcount: "43",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",
                       ratingcount: "43",
                     ),
-                    Applicants(
+                    const Applicants(
                       image: "assets/images/worker.jpg",
                       name: "Belete",
                       rating: "3.5",

@@ -104,26 +104,26 @@ class _RegistrationPageState extends State<RegistrationPage> {
               reverse: true,
               child: Column(
                 children: [
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   Column(
                     children: [
                       Text(
                         "register".tr,
                         textAlign: TextAlign.center,
-                        style:
-                            appstyle(headersize, Color(kDark.value), FontWeight.normal),
+                        style: appstyle(
+                            headersize, Color(kDark.value), FontWeight.normal),
                       ),
-                      HeightSpacer(size: 5),
-                      Container(
+                      const HeightSpacer(size: 5),
+                      SizedBox(
                         width: 90,
-                        child: CircleAvatar(
+                        child: const CircleAvatar(
                           radius: 40,
                           backgroundImage: AssetImage("assets/images/user.png"),
                         ),
                       ),
                     ],
                   ),
-                  HeightSpacer(size: 30),
+                  const HeightSpacer(size: 30),
                   Row(
                     children: [
                       Expanded(
@@ -142,7 +142,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                           ),
                         ),
                       ),
-                      WidthSpacer(size: 10),
+                      const WidthSpacer(size: 10),
                       Expanded(
                         child: Container(
                           child: CustomField(
@@ -161,7 +161,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       )
                     ],
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomField(
                     hintText: "mobilenumber".tr,
                     keyboard: TextInputType.name,
@@ -174,7 +174,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       }
                     },
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomField(
                     hintText: "selectprofession".tr,
                     keyboard: TextInputType.emailAddress,
@@ -187,7 +187,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       }
                     },
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomField(
                     hintText: "password".tr,
                     obscureText: SignUpNotifier.isObsecure,
@@ -211,7 +211,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       return null;
                     },
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomField(
                     hintText: "confirmpassword".tr,
                     obscureText: SignUpNotifier.isObsecure,
@@ -228,9 +228,11 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     keyboard: TextInputType.text,
                     controller: confirmpassword,
-                    validator: (confirmpassword) {},
+                    validator: (confirmpassword) {
+                      return null;
+                    },
                   ),
-                  HeightSpacer(size: 10),
+                  const HeightSpacer(size: 10),
                   Align(
                     alignment: Alignment.centerRight,
                     child: GestureDetector(
@@ -239,10 +241,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
                         },
                         child: ReusableText(
                             text: "login".tr,
-                            style: appstyle(
-                                headersize-3, Color(kBlue.value), FontWeight.w500))),
+                            style: appstyle(headersize - 3, Color(kBlue.value),
+                                FontWeight.w500))),
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomButton(
                     text: "signup".tr,
                     size: headersize,

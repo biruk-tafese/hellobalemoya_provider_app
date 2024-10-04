@@ -31,17 +31,16 @@ class OrderTypes extends StatelessWidget {
       } else {
         headersize = 11;
         iconwidth = 0.03;
- 
       }
     } else {
       if (orientaion == Orientation.portrait) {
         iconwidth = 0.05;
         headersize = 11;
-                avatarsize = 20.r;
+        avatarsize = 20.r;
       } else {
         iconwidth = 0.03;
         headersize = 8;
-                       avatarsize = 40.r;
+        avatarsize = 40.r;
       }
     }
     Widget? statusIcon;
@@ -104,9 +103,9 @@ class OrderTypes extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   statusIcon!,
-                  WidthSpacer(size: 12),
+                  const WidthSpacer(size: 12),
                   statusText!,
-                  WidthSpacer(size: 12),
+                  const WidthSpacer(size: 12),
                   CustomIcon(
                     width: iconwidth,
                     icon: Icons.arrow_forward_ios_rounded,

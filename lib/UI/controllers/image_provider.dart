@@ -11,14 +11,14 @@ class ImageUpoader extends ChangeNotifier {
   void pickImage() async {
     // ignore: no_leading_underscores_for_local_identifiers
 
-    XFile? _imageFile = await _picker.pickImage(source: ImageSource.gallery);
+    XFile? imageFile = await _picker.pickImage(source: ImageSource.gallery);
 
-    if (_imageFile != null) {
+    if (imageFile != null) {
       // Crop the image
 
-      _imageFile = await cropImage(_imageFile);
-      if (_imageFile != null) {
-        imageUrl.add(_imageFile.path);
+      imageFile = await cropImage(imageFile);
+      if (imageFile != null) {
+        imageUrl.add(imageFile.path);
       } else {
         return;
       }

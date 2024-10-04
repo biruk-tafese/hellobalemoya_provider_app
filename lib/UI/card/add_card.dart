@@ -13,7 +13,7 @@ class AddCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(249, 240, 238, 238),
+      backgroundColor: const Color.fromARGB(249, 240, 238, 238),
       appBar: AppBar(
         title: ReusableText(
             text: "Payment Methods",
@@ -22,11 +22,11 @@ class AddCard extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          HeightSpacer(size: 15),
+          const HeightSpacer(size: 15),
           Container(
-            padding: EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 247, 246, 246),
+              color: const Color.fromARGB(255, 247, 246, 246),
               border: Border(
                 bottom:
                     BorderSide(color: Color(kDarkGrey.value).withOpacity(0.6)),
@@ -40,14 +40,14 @@ class AddCard extends StatelessWidget {
                       children: [
                         IconButton(
                             onPressed: () {
-                              Get.to(AddCard());
+                              Get.to(const AddCard());
                             },
                             icon: Icon(
                               Icons.add_circle,
                               size: 35,
                               color: Color(kOrange.value),
                             )),
-                        WidthSpacer(size: 10),
+                        const WidthSpacer(size: 10),
                         Column(
                           children: [
                             ReusableText(
@@ -63,20 +63,20 @@ class AddCard extends StatelessWidget {
                 )),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                HeightSpacer(size: 15),
+                const HeightSpacer(size: 15),
                 ReusableText(
                   text: "Credit cards",
                   style: appstyle(18, Color(kDark.value), FontWeight.normal),
                 ),
-                HeightSpacer(size: 10),
+                const HeightSpacer(size: 10),
                 Container(
-                  padding: EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 247, 246, 246),
+                    color: const Color.fromARGB(255, 247, 246, 246),
                     border: BorderDirectional(
                       bottom: BorderSide(
                         color: Color(kDarkGrey.value).withOpacity(0.6),
@@ -92,9 +92,9 @@ class AddCard extends StatelessWidget {
                             radius: 30,
                             backgroundColor: Color(kBlue.value),
                             backgroundImage:
-                                AssetImage("assets/images/visa.jpg"),
+                                const AssetImage("assets/images/visa.jpg"),
                           ),
-                          WidthSpacer(size: 20),
+                          const WidthSpacer(size: 20),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [

@@ -3,7 +3,7 @@ import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class NavigationShow extends StatelessWidget {
-  NavigationShow({super.key});
+  const NavigationShow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class NavigationShow extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             height: 600,
             child: Image.asset(

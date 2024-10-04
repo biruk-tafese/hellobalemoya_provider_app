@@ -5,7 +5,6 @@ import 'package:provider_app_orientation/common/custom_btn.dart';
 
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PageTwo extends StatelessWidget {

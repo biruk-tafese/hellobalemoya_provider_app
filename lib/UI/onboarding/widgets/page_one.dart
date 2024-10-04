@@ -48,7 +48,7 @@ class PageOne extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -60,19 +60,19 @@ class PageOne extends StatelessWidget {
                     "assets/images/professions.png",
                     width: sWidth * 0.3,
                   ),
-            HeightSpacer(size: 20),
+            const HeightSpacer(size: 20),
             Column(
               children: [
                 ReusableText(
                     text: "Notifications",
                     style: appstyle(
-                        headersize!, Color(kBlue.value), FontWeight.normal)),
-                HeightSpacer(size: 10),
+                        headersize, Color(kBlue.value), FontWeight.normal)),
+                const HeightSpacer(size: 10),
                 ReusableText(
                     text: "Allow user to recieve new alerts",
                     style: appstyle(headersize - 10, Color(kBlue.value),
                         FontWeight.normal)),
-                HeightSpacer(size: 60),
+                const HeightSpacer(size: 60),
                 FractionallySizedBox(
                     widthFactor: buttonWidth,
                     child: CustomButton(

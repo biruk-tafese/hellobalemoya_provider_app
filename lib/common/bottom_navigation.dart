@@ -14,12 +14,12 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int _selectedIndex = 0;
-  static List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page'),
-    Text('Search Page'),
-    Text('Profile Page'),
-    Text('Profile2 Page'),
-    Text('Profile3 Page'),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const Text('Home Page'),
+    const Text('Search Page'),
+    const Text('Profile Page'),
+    const Text('Profile2 Page'),
+    const Text('Profile3 Page'),
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -31,20 +31,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
             context, MaterialPageRoute(builder: (context) => HomePage()));
         break;
       case 1:
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => ChatsPage()));
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const ChatsPage()));
         break;
       case 2:
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => MyWalletPage()));
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const MyWalletPage()));
         break;
       case 3:
         Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => DeviceManagement()));
+            MaterialPageRoute(builder: (context) => const DeviceManagement()));
         break;
       case 4:
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => ProfilePage()));
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const ProfilePage()));
         break;
       default:
         Navigator.pushReplacement(

@@ -20,7 +20,7 @@ class CustomIcon extends StatelessWidget {
       icon,
       size: MediaQuery.of(context).size.width * width,
     );
-    Container(
+    SizedBox(
       width: width, // Container width
       height: height, // Container height
       child: FittedBox(

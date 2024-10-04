@@ -29,7 +29,7 @@ class DeviceInfo extends StatelessWidget {
           text: device,
           style: appstyle(22, Color(kDark.value), FontWeight.bold),
         ),
-        HeightSpacer(size: 15),
+        const HeightSpacer(size: 15),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

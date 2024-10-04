@@ -51,10 +51,8 @@ class _AddImageState extends State<AddImage> {
 
   @override
   Widget build(BuildContext context) {
-
     double? boxWidth;
     double? boxHeight;
-   
 
     double sWidth = MediaQuery.of(context).size.width;
     bool isMobile(BuildContext context) =>
@@ -62,19 +60,19 @@ class _AddImageState extends State<AddImage> {
     Orientation orientaion = MediaQuery.of(context).orientation;
     if (isMobile(context)) {
       if (orientaion == Orientation.portrait) {
-      boxWidth = 290.w;
-      boxHeight = 260.h;
+        boxWidth = 290.w;
+        boxHeight = 260.h;
       } else {
-      boxWidth = 145.w;
-      boxHeight = 260.h;
+        boxWidth = 145.w;
+        boxHeight = 260.h;
       }
     } else {
       if (orientaion == Orientation.portrait) {
-      boxWidth = 260.w;
-      boxHeight = 240.h;
+        boxWidth = 260.w;
+        boxHeight = 240.h;
       } else {
-      boxWidth = 170.w;
-      boxHeight = 240.h;
+        boxWidth = 170.w;
+        boxHeight = 240.h;
       }
     }
     Widget content = HeaderSubtitle(
@@ -86,7 +84,7 @@ class _AddImageState extends State<AddImage> {
     );
     if (_selectedImage != null) {
       content = ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(20)),
+        borderRadius: const BorderRadius.all(Radius.circular(20)),
         child: GestureDetector(
           onTap: _takePicture,
           child: Image.file(
@@ -108,7 +106,7 @@ class _AddImageState extends State<AddImage> {
 
     return Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: const BorderRadius.all(Radius.circular(20)),
             border: Border.all(color: Color(kLightGrey.value)),
             color: Color(kLight.value)),
         height: boxHeight,
@@ -124,8 +122,9 @@ class HeaderSubtitle extends StatelessWidget {
   final IconData subtile2;
   final void Function() onTapCamera;
   final void Function() onTapMedia;
-  HeaderSubtitle(
-      {required this.header,
+  const HeaderSubtitle(
+      {super.key,
+      required this.header,
       required this.subtitle,
       required this.subtile2,
       required this.onTapCamera,
@@ -166,7 +165,7 @@ class HeaderSubtitle extends StatelessWidget {
           header,
           style: appstyle(headersize + 2, Colors.grey, FontWeight.w500),
         ),
-        HeightSpacer(
+        const HeightSpacer(
             size:
                 10), // Optional: add some space between the header and the subtitle
         Row(

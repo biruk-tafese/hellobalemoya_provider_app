@@ -9,6 +9,8 @@ import 'package:get/get.dart';
 // Replace with your main screen import
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -18,8 +20,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 3),
-      () => Get.to(MainScreen()),
+      const Duration(seconds: 3),
+      () => Get.to(const MainScreen()),
     );
   }
 

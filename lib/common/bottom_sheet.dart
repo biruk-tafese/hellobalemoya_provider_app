@@ -54,7 +54,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
         headersize = 18;
         iconwidth = 0.06;
       } else {
-                avatarsize = 42.r;
+        avatarsize = 42.r;
         padding = 35;
         btnheight = 75;
         headersize = 11;
@@ -62,13 +62,13 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
       }
     } else {
       if (orientaion == Orientation.portrait) {
-                avatarsize = 35.r;
+        avatarsize = 35.r;
         btnheight = 37;
         padding = 30;
         headersize = 15;
         iconwidth = 0.05;
       } else {
-                avatarsize = 40.r;
+        avatarsize = 40.r;
         btnheight = 50;
         padding = 30;
         headersize = 8;
@@ -93,9 +93,10 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                   children: [
                     CircleAvatar(
                       radius: avatarsize,
-                      backgroundImage: AssetImage("assets/images/worker.jpg"),
+                      backgroundImage:
+                          const AssetImage("assets/images/worker.jpg"),
                     ),
-                    WidthSpacer(size: 16),
+                    const WidthSpacer(size: 16),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,13 +111,13 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                           style: appstyle(headersize - 2,
                               Color(kDarkGrey.value), FontWeight.normal),
                         ),
-                        HeightSpacer(size: 10),
+                        const HeightSpacer(size: 10),
                         ReusableText(
                           text: widget.location,
                           style: appstyle(headersize - 1,
                               Color(kDarkGrey.value), FontWeight.normal),
                         ),
-                        HeightSpacer(size: 10),
+                        const HeightSpacer(size: 10),
                         Row(
                           children: [
                             ReusableText(
@@ -124,7 +125,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                               style: appstyle(headersize - 2,
                                   Color(kDarkGrey.value), FontWeight.normal),
                             ),
-                            WidthSpacer(size: 10),
+                            const WidthSpacer(size: 10),
                             ReusableText(
                               text: widget.status,
                               style: appstyle(headersize - 2,
@@ -132,7 +133,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                             ),
                           ],
                         ),
-                        HeightSpacer(size: 5),
+                        const HeightSpacer(size: 5),
                         Container(
                           child: RatingBar(
                             itemSize:
@@ -143,7 +144,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                             allowHalfRating: true,
                             itemCount: 5,
                             ratingWidget: RatingWidget(
-                              full: CustomIcon(
+                              full: const CustomIcon(
                                   width: 2,
                                   icon: Icons.star,
                                   color: Colors.orange),
@@ -167,7 +168,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                 )
               ],
             ),
-            HeightSpacer(size: 15),
+            const HeightSpacer(size: 15),
             CustomButton(
               fw: FontWeight.normal,
               size: headersize + 1,
@@ -177,7 +178,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return ServiceProvider();
+                      return const ServiceProvider();
                     },
                   ),
                 );

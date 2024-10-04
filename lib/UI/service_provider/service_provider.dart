@@ -23,7 +23,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
     double? iconwidth;
     double? toolbarheight;
     double? headersize;
-   bool isMobile(BuildContext context) =>
+    bool isMobile(BuildContext context) =>
         MediaQuery.of(context).size.shortestSide <= 500;
     Orientation orientaion = MediaQuery.of(context).orientation;
     if (isMobile(context)) {
@@ -80,7 +80,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
           )
         ],
       ),
-      body: ListView(children: [ProfileProvider(), Text("")]),
+      body: ListView(children: const [ProfileProvider(), Text("")]),
     );
   }
 }

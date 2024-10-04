@@ -45,7 +45,7 @@ class _SearchPageState extends State<SearchPage> {
       } else {
         toolbarheight = 55.h;
         headersize = 13;
-                imageWidth = sWidth * 0.5;
+        imageWidth = sWidth * 0.5;
         iconwidth = 0.03;
       }
     }
@@ -76,9 +76,9 @@ class _SearchPageState extends State<SearchPage> {
       ),
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 "assets/images/optimized_search.png",
@@ -86,8 +86,8 @@ class _SearchPageState extends State<SearchPage> {
               ),
               ReusableText(
                 text: "startsearch".tr,
-                style:
-                    appstyle(headersize + 1, Color(kDark.value), FontWeight.w500),
+                style: appstyle(
+                    headersize + 1, Color(kDark.value), FontWeight.w500),
               ),
             ],
           ),

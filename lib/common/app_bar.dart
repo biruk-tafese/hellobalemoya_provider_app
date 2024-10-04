@@ -13,7 +13,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       toolbarHeight: 55.h,
-      iconTheme: IconThemeData(),
+      iconTheme: const IconThemeData(),
       backgroundColor: Color(kLight.value),
       elevation: 0,
       automaticallyImplyLeading: false,

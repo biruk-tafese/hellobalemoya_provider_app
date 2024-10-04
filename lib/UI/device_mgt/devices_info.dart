@@ -1,13 +1,10 @@
 import 'package:provider_app_orientation/UI/device_mgt/widgets/device_info.dart';
-import 'package:provider_app_orientation/UI/onboarding/onboarding_screen.dart';
 import 'package:provider_app_orientation/UI/splash/splash_screen.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
-import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:provider_app_orientation/controllers/exports.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';

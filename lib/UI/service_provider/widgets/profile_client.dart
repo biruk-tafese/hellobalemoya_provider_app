@@ -83,7 +83,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
     }
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
           padding: EdgeInsets.zero,
           child: Column(
@@ -96,7 +96,8 @@ class _ProfileProviderState extends State<ProfileProvider> {
                     children: [
                       CircleAvatar(
                         radius: avatarsize,
-                        backgroundImage: AssetImage("assets/images/worker.jpg"),
+                        backgroundImage:
+                            const AssetImage("assets/images/worker.jpg"),
                       ),
                       WidthSpacer(size: 16.w),
                       Column(
@@ -114,7 +115,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
                                 Color(kDarkGrey.value), FontWeight.w400),
                           ),
                           HeightSpacer(size: 8.h),
-                          Container(
+                          SizedBox(
                             width: sWidth * 0.6,
                             child: Text(
                               maxLines: 5,
@@ -123,14 +124,14 @@ class _ProfileProviderState extends State<ProfileProvider> {
                                   Color(kDarkGrey.value), FontWeight.w400),
                             ),
                           ),
-                                                       CustomOutlineBtn(
-                                  text: "follow".tr,
-                                  size: headersize - 1,
-                                  color: Colors.white,
-                                  width: buttonWidth,
-                                  height: buttonHeight,
-                                  bcolor: Color(kOrange.value),
-                                ),
+                          CustomOutlineBtn(
+                            text: "follow".tr,
+                            size: headersize - 1,
+                            color: Colors.white,
+                            width: buttonWidth,
+                            height: buttonHeight,
+                            bcolor: Color(kOrange.value),
+                          ),
                           HeightSpacer(size: 8.h),
                           ReusableText(
                             text: "Addis Ababa,Ayat",
@@ -163,15 +164,15 @@ class _ProfileProviderState extends State<ProfileProvider> {
                               allowHalfRating: true,
                               itemCount: 5,
                               ratingWidget: RatingWidget(
-                                full: CustomIcon(
+                                full: const CustomIcon(
                                     width: 0.01,
                                     icon: Icons.star,
                                     color: Colors.orange),
-                                half: CustomIcon(
+                                half: const CustomIcon(
                                     width: 0.01,
                                     icon: Icons.star_half,
                                     color: Colors.orange),
-                                empty: CustomIcon(
+                                empty: const CustomIcon(
                                     width: 0.01,
                                     icon: Icons.star_border_outlined,
                                     color: Colors.orange),
@@ -182,11 +183,10 @@ class _ProfileProviderState extends State<ProfileProvider> {
                             ),
                           ),
                           HeightSpacer(size: 15.h),
-                          Container(
+                          SizedBox(
                             width: sWidth * 0.71,
                             child: Row(
                               children: [
-   
                                 WidthSpacer(size: 8.w),
                                 CustomOutlineBtn(
                                   text: "rateprovider".tr,
@@ -227,7 +227,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
               style: appstyle(headersize, Color(kDark.value), FontWeight.w400),
             ),
             HeightSpacer(size: 16.h),
-            Container(
+            SizedBox(
               width: sWidth * 0.4,
               child: Text(
                   style: appstyle(
@@ -269,7 +269,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
               children: [
                 CustomButton(
                   onTap: () {
-                    Get.to(MyChatApp());
+                    Get.to(const MyChatApp());
                   },
                   text: "chat".tr,
                   size: headersize,
@@ -280,7 +280,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
                 ),
                 WidthSpacer(size: 5.w),
                 CustomButton(
-                  text: "callnow".tr +": +2519.....",
+                  text: "${"callnow".tr}: +2519.....",
                   size: headersize,
                   fw: FontWeight.normal,
                   width: buttonWidth + 100,
@@ -296,7 +296,7 @@ class _ProfileProviderState extends State<ProfileProvider> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return ClientOrders();
+                      return const ClientOrders();
                     },
                   ),
                 );

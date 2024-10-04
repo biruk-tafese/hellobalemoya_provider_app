@@ -78,19 +78,19 @@ class _MyWalletState extends State<MyWalletPage> {
                                       Color(kLight.value), FontWeight.w500)),
                               ReusableText(
                                   text: "totaldeposit".tr,
-                                  style: appstyle(headersize! - 5,
+                                  style: appstyle(headersize - 5,
                                       Color(kLight.value), FontWeight.w500)),
-                              HeightSpacer(size: 10)
+                              const HeightSpacer(size: 10)
                             ],
                           ),
                         ),
-                        HeightSpacer(size: 10),
+                        const HeightSpacer(size: 10),
                         Container(
                           decoration: BoxDecoration(
                               border: BorderDirectional(
                                   bottom: BorderSide(
                                       color: Color(kLightGrey.value)))),
-                          padding: EdgeInsets.all(15),
+                          padding: const EdgeInsets.all(15),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -108,13 +108,14 @@ class _MyWalletState extends State<MyWalletPage> {
                         ),
                         HeightSpacer(size: 13.h),
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
                           width: double.infinity,
                           height: topheight! * 0.5,
                           child: Text(
                             textAlign: TextAlign.start,
                             "paymenthistory".tr,
-                            style: appstyle(headersize, Colors.black, FontWeight.normal),
+                            style: appstyle(
+                                headersize, Colors.black, FontWeight.normal),
                           ),
                         ),
                         HeightSpacer(size: 5.h),
@@ -126,56 +127,56 @@ class _MyWalletState extends State<MyWalletPage> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "232ETB",
                                 name: "yohanes",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "232ETB",
                                 name: "yohanes",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
@@ -205,19 +206,19 @@ class _MyWalletState extends State<MyWalletPage> {
                                         Color(kLight.value), FontWeight.w500)),
                                 ReusableText(
                                     text: "TOTAL DEPOSIT",
-                                    style: appstyle(headersize! - 3,
+                                    style: appstyle(headersize - 3,
                                         Color(kLight.value), FontWeight.w500)),
-                                HeightSpacer(size: 10)
+                                const HeightSpacer(size: 10)
                               ],
                             ),
                           ),
-                          HeightSpacer(size: 10),
+                          const HeightSpacer(size: 10),
                           Container(
                             decoration: BoxDecoration(
                                 border: BorderDirectional(
                                     bottom: BorderSide(
                                         color: Color(kLightGrey.value)))),
-                            padding: EdgeInsets.all(15),
+                            padding: const EdgeInsets.all(15),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -243,56 +244,56 @@ class _MyWalletState extends State<MyWalletPage> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "232ETB",
                                 name: "yohanes",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "232ETB",
                                 name: "yohanes",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(13),
-                              child: MyWalletWidget(
+                              padding: const EdgeInsets.all(13),
+                              child: const MyWalletWidget(
                                 amount: "495ETB",
                                 name: "Kedir",
                                 Tno: "#324343",

@@ -52,8 +52,8 @@ class _ProfileEditState extends State<ProfileEdit> {
   final TextEditingController _locationController = TextEditingController();
   final TextEditingController _descriptionController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-  bool _isExpanded = false;
-  Icon man = Icon(
+  final bool _isExpanded = false;
+  Icon man = const Icon(
     Icons.person,
     size: 36,
   );
@@ -124,7 +124,6 @@ class _ProfileEditState extends State<ProfileEdit> {
         bioheight = 150.h;
         toolbarheight = 58.h;
       } else {
-
         avatarsize = 80.r;
         headersize = 14;
         iconwidth = 0.04;
@@ -136,32 +135,35 @@ class _ProfileEditState extends State<ProfileEdit> {
       }
     }
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white,toolbarHeight: toolbarheight, actions: [
-        GestureDetector(
-          onTap: () {
-            Get.back();
-          },
-          child: Padding(
-            padding: EdgeInsets.all(11),
-            child: CustomButton(
-              text: "Save",
-              height: btnheight,
-              width: btnwidth,
-              bcolor: Color(kOrange.value),
-              color: Color(kLight.value),
-              size: headersize - 2,
-              fw: FontWeight.normal,
+      appBar: AppBar(
+          backgroundColor: Colors.white,
+          toolbarHeight: toolbarheight,
+          actions: [
+            GestureDetector(
               onTap: () {
                 Get.back();
               },
+              child: Padding(
+                padding: const EdgeInsets.all(11),
+                child: CustomButton(
+                  text: "Save",
+                  height: btnheight,
+                  width: btnwidth,
+                  bcolor: Color(kOrange.value),
+                  color: Color(kLight.value),
+                  size: headersize - 2,
+                  fw: FontWeight.normal,
+                  onTap: () {
+                    Get.back();
+                  },
+                ),
+              ),
             ),
-          ),
-        ),
-      ]),
+          ]),
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: [
                 Row(
@@ -172,7 +174,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                           radius: avatarsize,
                           backgroundColor: Color(kBlue.value),
                         ),
-                        WidthSpacer(size: 10),
+                        const WidthSpacer(size: 10),
                         GestureDetector(
                           onTap: _takePicture,
                           child: Icon(
@@ -182,7 +184,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                         )
                       ],
                     ),
-                    WidthSpacer(size: 25),
+                    const WidthSpacer(size: 25),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -245,9 +247,9 @@ class _ProfileEditState extends State<ProfileEdit> {
                     )
                   ],
                 ),
-                HeightSpacer(size: 15),
+                const HeightSpacer(size: 15),
                 SingleChildScrollView(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Center(
                     child: ConstrainedBox(
                       constraints: BoxConstraints(maxWidth: sWidth * 0.7),
@@ -262,14 +264,14 @@ class _ProfileEditState extends State<ProfileEdit> {
                               labelText: 'Enter your bio',
                               labelStyle: appstyle(headersize - 1,
                                   Colors.black38, FontWeight.normal),
-                              border: OutlineInputBorder(),
+                              border: const OutlineInputBorder(),
                               filled: true,
                               fillColor: Colors.white60,
                             ),
                             maxLines: null,
                             maxLength: 150, // Allows for multi-line input
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                         ],
                       ),
                     ),
@@ -285,7 +287,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                   style: appstyle(
                       headersize, Color(kDark.value), FontWeight.w400)),
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -312,12 +314,12 @@ class _ProfileEditState extends State<ProfileEdit> {
               )
             ],
           ),
-          HeightSpacer(size: 10),
+          const HeightSpacer(size: 10),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -344,11 +346,11 @@ class _ProfileEditState extends State<ProfileEdit> {
               )
             ],
           ),
-          HeightSpacer(size: 10),
+          const HeightSpacer(size: 10),
           Column(
             children: [
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -378,7 +380,7 @@ class _ProfileEditState extends State<ProfileEdit> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HeightSpacer(size: 10),
+              const HeightSpacer(size: 10),
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: ReusableText(
@@ -392,7 +394,8 @@ class _ProfileEditState extends State<ProfileEdit> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -404,7 +407,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                       children: [
                         IconButton(
                           onPressed: () {
-                            Get.to(AddCard());
+                            Get.to(const AddCard());
                           },
                           icon: Icon(
                             Icons.add_circle,
@@ -412,7 +415,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                             color: Color(kOrange.value),
                           ),
                         ),
-                        WidthSpacer(size: 10),
+                        const WidthSpacer(size: 10),
                         Column(
                           children: [
                             ReusableText(

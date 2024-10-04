@@ -43,19 +43,19 @@ class _ProfilePageState extends State<ProfilePage> {
         toolbarheight = 55.h;
         avatarwidth = 40.r;
       } else {
-                avatarwidth = 60.r;
+        avatarwidth = 60.r;
         headersize = 11;
         iconwidth = 0.03;
         toolbarheight = 55.h;
       }
     } else {
       if (orientaion == Orientation.portrait) {
-                avatarwidth = 40.r;
+        avatarwidth = 40.r;
         headersize = 14;
         iconwidth = 0.05;
         toolbarheight = 55.h;
       } else {
-                avatarwidth = 60.r;
+        avatarwidth = 60.r;
         headersize = 15;
         iconwidth = 0.05;
         toolbarheight = 55.h;
@@ -86,7 +86,7 @@ class _ProfilePageState extends State<ProfilePage> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
-                    return ProfileEdit();
+                    return const ProfileEdit();
                   },
                 ),
               );
@@ -101,16 +101,17 @@ class _ProfilePageState extends State<ProfilePage> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: [
                 Row(
                   children: [
                     CircleAvatar(
                       radius: avatarwidth,
-                      backgroundImage: AssetImage("assets/images/worker.jpg"),
+                      backgroundImage:
+                          const AssetImage("assets/images/worker.jpg"),
                     ),
-                    WidthSpacer(size: 14),
+                    const WidthSpacer(size: 14),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -139,12 +140,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     )
                   ],
                 ),
-                HeightSpacer(size: 15),
+                const HeightSpacer(size: 15),
                 Container(
                   decoration: BoxDecoration(
                       color: Color(kLightGrey.value),
                       borderRadius: BorderRadius.circular(10)),
-                  padding: EdgeInsets.all(7),
+                  padding: const EdgeInsets.all(7),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -182,7 +183,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   style: appstyle(
                       headersize + 1, Color(kDark.value), FontWeight.w400)),
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -209,12 +210,12 @@ class _ProfilePageState extends State<ProfilePage> {
               )
             ],
           ),
-          HeightSpacer(size: 10),
+          const HeightSpacer(size: 10),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -241,11 +242,11 @@ class _ProfilePageState extends State<ProfilePage> {
               )
             ],
           ),
-          HeightSpacer(size: 10),
+          const HeightSpacer(size: 10),
           Column(
             children: [
               Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -283,7 +284,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         headersize - 1, Color(kDark.value), FontWeight.w400)),
               ),
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -300,7 +301,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               size:
                                   MediaQuery.of(context).size.width * iconwidth,
                             ),
-                            WidthSpacer(size: 10),
+                            const WidthSpacer(size: 10),
                             Column(
                               children: [
                                 ReusableText(
@@ -326,7 +327,8 @@ class _ProfilePageState extends State<ProfilePage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 4),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Color(kDarkGrey.value)),
@@ -340,7 +342,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             IconButton(
                                 onPressed: () {
-                                  Get.to(AddCard());
+                                  Get.to(const AddCard());
                                 },
                                 icon: Icon(
                                   Icons.add_circle,
@@ -348,7 +350,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       iconwidth,
                                   color: Color(kOrange.value),
                                 )),
-                            WidthSpacer(size: 10),
+                            const WidthSpacer(size: 10),
                             Column(
                               children: [
                                 ReusableText(

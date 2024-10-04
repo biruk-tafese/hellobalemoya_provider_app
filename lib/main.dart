@@ -1,11 +1,4 @@
 import 'package:provider_app_orientation/UI/controllers/image_provider.dart';
-import 'package:provider_app_orientation/UI/editable/profile_edit.dart';
-import 'package:provider_app_orientation/UI/homepage.dart';
-import 'package:provider_app_orientation/UI/mainscreen.dart';
-import 'package:provider_app_orientation/UI/order/client_orders.dart';
-import 'package:provider_app_orientation/UI/order/my_orders.dart';
-import 'package:provider_app_orientation/UI/order/posted_order.dart';
-import 'package:provider_app_orientation/UI/service_provider/service_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -13,7 +6,6 @@ import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:provider_app_orientation/controllers/exports.dart';
 import 'package:provider_app_orientation/UI/onboarding/onboarding_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/services.dart';
 import 'package:provider_app_orientation/data/local_string.dart';
 import 'common/exports.dart';
 

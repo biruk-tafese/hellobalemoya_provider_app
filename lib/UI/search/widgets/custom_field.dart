@@ -3,7 +3,7 @@ import 'package:provider_app_orientation/common/exports.dart';
 
 class CustomField extends StatelessWidget {
   const CustomField({
-    Key? key,
+    super.key,
     required this.hintText,
     required this.controller,
     this.validator,
@@ -11,7 +11,7 @@ class CustomField extends StatelessWidget {
     this.suffixIcon,
     this.obscureText,
     this.onEditingComplete,
-  }) : super(key: key);
+  });
 
   final TextEditingController controller;
   final String hintText;
@@ -50,8 +50,8 @@ class CustomField extends StatelessWidget {
           hintText: hintText,
           suffixIcon: suffixIcon,
           suffixIconColor: Color(kBlue.value),
-          hintStyle: appstyle(
-              headersize-1, Color((kBlue.value)).withOpacity(0.6), FontWeight.w500),
+          hintStyle: appstyle(headersize - 1,
+              Color((kBlue.value)).withOpacity(0.6), FontWeight.w500),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
               color: Color(kBlue.value),
@@ -61,7 +61,7 @@ class CustomField extends StatelessWidget {
         ),
         controller: controller,
         cursorHeight: 25,
-        style: appstyle(headersize+1, Color(kBlue.value), FontWeight.w500),
+        style: appstyle(headersize + 1, Color(kBlue.value), FontWeight.w500),
         onSubmitted: validator);
   }
 }

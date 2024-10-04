@@ -13,7 +13,6 @@ class MyWalletWidget extends StatelessWidget {
   final String amount;
   @override
   Widget build(BuildContext context) {
-
     double? headersize;
     double sWidth = MediaQuery.of(context).size.width;
     bool isMobile(BuildContext context) =>
@@ -21,24 +20,15 @@ class MyWalletWidget extends StatelessWidget {
     Orientation orientaion = MediaQuery.of(context).orientation;
     if (isMobile(context)) {
       if (orientaion == Orientation.portrait) {
-
-
         headersize = 18;
       } else {
-
-
         headersize = 9;
       }
     } else {
       if (orientaion == Orientation.portrait) {
-
-
         headersize = 16;
-
       } else {
         headersize = 12;
-
-
       }
     }
     return Container(
@@ -54,7 +44,7 @@ class MyWalletWidget extends StatelessWidget {
               CircleAvatar(
                 radius: 30.r,
                 backgroundColor: Color(kBlue.value),
-                backgroundImage: AssetImage("assets/images/face1.jpg"),
+                backgroundImage: const AssetImage("assets/images/face1.jpg"),
               ),
               WidthSpacer(size: 20.w),
               Column(

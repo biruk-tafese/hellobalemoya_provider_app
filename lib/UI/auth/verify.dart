@@ -78,17 +78,17 @@ class _VerifyPasswordState extends State<VerifyPassword> {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal:  pagepadding),
+        padding: EdgeInsets.symmetric(horizontal: pagepadding),
         child: SingleChildScrollView(
             reverse: true,
             child: Column(
               children: [
-                HeightSpacer(size: 50),
+                const HeightSpacer(size: 50),
                 ReusableText(
                     text: "verify".tr,
-                    style: appstyle(headersize + 6, Color(kBlue.value),
-                        FontWeight.w500)),
-                HeightSpacer(size: 50),
+                    style: appstyle(
+                        headersize + 6, Color(kBlue.value), FontWeight.w500)),
+                const HeightSpacer(size: 50),
                 CustomField(
                   hintText: "code".tr,
                   keyboard: TextInputType.text,
@@ -101,12 +101,10 @@ class _VerifyPasswordState extends State<VerifyPassword> {
                     }
                   },
                 ),
-                HeightSpacer(size: 20),
-                HeightSpacer(size: 30),
+                const HeightSpacer(size: 20),
+                const HeightSpacer(size: 30),
                 CustomButton(
-                  onTap: () {
-                
-                  },
+                  onTap: () {},
                   text: "verify".tr,
                   size: headersize,
                   fw: FontWeight.normal,
@@ -114,7 +112,7 @@ class _VerifyPasswordState extends State<VerifyPassword> {
                   height: buttonheight,
                   bcolor: Color(kBlue.value),
                 ),
-                HeightSpacer(size: 14),
+                const HeightSpacer(size: 14),
               ],
             )),
       ),

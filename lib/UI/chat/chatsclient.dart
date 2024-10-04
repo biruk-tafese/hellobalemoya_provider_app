@@ -23,7 +23,7 @@ class MyChatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChatPage();
+    return const ChatPage();
   }
 }
 
@@ -272,7 +272,7 @@ class _ChatPageState extends State<ChatPage> {
         showUserNames: true,
         user: _user,
         typingIndicatorOptions:
-            TypingIndicatorOptions(animationSpeed: Durations.medium1),
+            const TypingIndicatorOptions(animationSpeed: Durations.medium1),
       ),
     );
   }

@@ -1,6 +1,5 @@
 // lib/features/map/screens/map_screen.dart
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider_app_orientation/models/serviceprovider_model.dart';
 import '../data/providermock_data.dart';
 import '../UI/map/mapview_page.dart';

@@ -89,17 +89,17 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             ),
           ),
           body: Padding(
-            padding: EdgeInsets.symmetric(horizontal:  pagepadding),
+            padding: EdgeInsets.symmetric(horizontal: pagepadding),
             child: SingleChildScrollView(
                 reverse: true,
                 child: Column(
                   children: [
-                    HeightSpacer(size: 50),
+                    const HeightSpacer(size: 50),
                     ReusableText(
                         text: "forgotpassword".tr,
                         style: appstyle(headersize + 6, Color(kBlue.value),
                             FontWeight.w500)),
-                    HeightSpacer(size: 50),
+                    const HeightSpacer(size: 50),
                     CustomField(
                       hintText: "mobilenumber".tr,
                       keyboard: TextInputType.text,
@@ -112,11 +112,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         }
                       },
                     ),
-                    HeightSpacer(size: 20),
-                    HeightSpacer(size: 30),
+                    const HeightSpacer(size: 20),
+                    const HeightSpacer(size: 30),
                     CustomButton(
                       onTap: () {
-                        Get.to(VerifyPassword());
+                        Get.to(const VerifyPassword());
                       },
                       text: "sendcode".tr,
                       size: headersize,
@@ -125,7 +125,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       height: buttonheight,
                       bcolor: Color(kBlue.value),
                     ),
-                    HeightSpacer(size: 14),
+                    const HeightSpacer(size: 14),
                   ],
                 )),
           ),

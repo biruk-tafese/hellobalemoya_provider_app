@@ -38,18 +38,18 @@ class ClientOrders extends StatelessWidget {
         buttonWidth = 55;
         headersize = 10;
         iconwidth = 0.03;
-              imagewidth = sWidth * 0.3;
+        imagewidth = sWidth * 0.3;
       }
     } else {
       if (orientaion == Orientation.portrait) {
-                imagewidth = sWidth * 0.9;
+        imagewidth = sWidth * 0.9;
         buttonWidth = 72;
         iconwidth = 0.05;
         headersize = 13;
         toolbarheight = 58.h;
         buttonHeight = 26.h;
       } else {
-                imagewidth = sWidth * 0.3;
+        imagewidth = sWidth * 0.3;
         buttonWidth = 72;
         iconwidth = 0.04;
         headersize = 12;
@@ -58,7 +58,7 @@ class ClientOrders extends StatelessWidget {
       }
     }
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 245, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 245, 245, 245),
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -88,15 +88,16 @@ class ClientOrders extends StatelessWidget {
       ),
       body: Container(
         width: double.infinity,
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-              child: SingleChildScrollView(child: Column(
+              child: SingleChildScrollView(
+                  child: Column(
                 children: [
                   SizedBox(
-                    width:imagewidth,
+                    width: imagewidth,
                     height: 200.h,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(7),
@@ -106,12 +107,13 @@ class ClientOrders extends StatelessWidget {
                       ),
                     ),
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   ReusableText(
                     text: "Choose timing",
-                    style: appstyle(headersize + 2, Colors.black, FontWeight.normal),
+                    style: appstyle(
+                        headersize + 2, Colors.black, FontWeight.normal),
                   ),
-                  HeightSpacer(size: 6),
+                  const HeightSpacer(size: 6),
                   RichText(
                     text: TextSpan(
                       children: [
@@ -122,22 +124,23 @@ class ClientOrders extends StatelessWidget {
                             color: Color(kOrange.value),
                           ),
                         ),
-                        WidgetSpan(child: WidthSpacer(size: 5)),
+                        const WidgetSpan(child: WidthSpacer(size: 5)),
                         TextSpan(
                             text: "according to time",
-                            style: appstyle(
-                                headersize + 1, Colors.black, FontWeight.normal))
+                            style: appstyle(headersize + 1, Colors.black,
+                                FontWeight.normal))
                       ],
                     ),
                   ),
-                  HeightSpacer(size: 10),
+                  const HeightSpacer(size: 10),
                   Row(
                     children: [
                       Expanded(
                         child: TextField(
                           readOnly: true,
                           decoration: InputDecoration(
-                              fillColor: const Color.fromARGB(235, 255, 255, 255),
+                              fillColor:
+                                  const Color.fromARGB(235, 255, 255, 255),
                               filled: true,
                               enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -153,12 +156,13 @@ class ClientOrders extends StatelessWidget {
                               )),
                         ),
                       ),
-                      WidthSpacer(size: 15),
+                      const WidthSpacer(size: 15),
                       Expanded(
                         child: TextField(
                           readOnly: true,
                           decoration: InputDecoration(
-                              fillColor: const Color.fromARGB(235, 255, 255, 255),
+                              fillColor:
+                                  const Color.fromARGB(235, 255, 255, 255),
                               filled: true,
                               enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -176,9 +180,9 @@ class ClientOrders extends StatelessWidget {
                       ),
                     ],
                   ),
-                  HeightSpacer(size: 5),
+                  const HeightSpacer(size: 5),
                   Container(
-                    padding: EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                         color: const Color.fromARGB(235, 255, 255, 255),
                         border: Border.all(color: Color(kDarkGrey.value))),
@@ -186,14 +190,14 @@ class ClientOrders extends StatelessWidget {
                     child: Text(
                       overflow: null,
                       "sssssssssssssssssssddddddddddddsdsdsdsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddsss",
-                      style: appstyle(
-                          headersize - 2, Color(kDarkGrey.value), FontWeight.normal),
+                      style: appstyle(headersize - 2, Color(kDarkGrey.value),
+                          FontWeight.normal),
                     ),
                   ),
-                  HeightSpacer(size: 20),
+                  const HeightSpacer(size: 20),
                   CustomButton(
                     onTap: () {
-                      Get.to(PostedOrders());
+                      Get.to(const PostedOrders());
                     },
                     text: "Accept Order",
                     size: headersize + 1,
@@ -202,8 +206,8 @@ class ClientOrders extends StatelessWidget {
                     height: buttonHeight + 5,
                     bcolor: Color(kBlue.value),
                   ),
-                ],)
-              ),
+                ],
+              )),
             ),
           ],
         ),

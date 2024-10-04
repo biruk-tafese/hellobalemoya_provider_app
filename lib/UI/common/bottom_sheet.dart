@@ -59,9 +59,10 @@ class CustomBottomSheetClient extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 35.r,
-                      backgroundImage: AssetImage("assets/images/face1.jpg"),
+                      backgroundImage:
+                          const AssetImage("assets/images/face1.jpg"),
                     ),
-                    WidthSpacer(size: 16),
+                    const WidthSpacer(size: 16),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,13 +77,13 @@ class CustomBottomSheetClient extends StatelessWidget {
                           style: appstyle(headersize - 2,
                               Color(kDarkGrey.value), FontWeight.normal),
                         ),
-                        HeightSpacer(size: 10),
+                        const HeightSpacer(size: 10),
                         ReusableText(
                           text: location,
                           style: appstyle(headersize - 1,
                               Color(kDarkGrey.value), FontWeight.normal),
                         ),
-                        HeightSpacer(size: 10),
+                        const HeightSpacer(size: 10),
                         Row(
                           children: [
                             ReusableText(
@@ -90,7 +91,7 @@ class CustomBottomSheetClient extends StatelessWidget {
                               style: appstyle(headersize - 2,
                                   Color(kDarkGrey.value), FontWeight.normal),
                             ),
-                            WidthSpacer(size: 10),
+                            const WidthSpacer(size: 10),
                             ReusableText(
                               text: status,
                               style: appstyle(headersize - 2,
@@ -99,7 +100,7 @@ class CustomBottomSheetClient extends StatelessWidget {
                           ],
                         ),
                         HeightSpacer(size: 5.h),
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.star_border,
@@ -129,7 +130,7 @@ class CustomBottomSheetClient extends StatelessWidget {
                 )
               ],
             ),
-            HeightSpacer(size: 15),
+            const HeightSpacer(size: 15),
             CustomButton(
               fw: FontWeight.normal,
               size: headersize + 1,
@@ -139,7 +140,7 @@ class CustomBottomSheetClient extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return ServiceProvider();
+                      return const ServiceProvider();
                     },
                   ),
                 );

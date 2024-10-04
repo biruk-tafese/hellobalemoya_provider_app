@@ -59,19 +59,19 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             PageView(
               controller: pageController,
               physics: OnBoardNotifier.isLastPage
-                  ? NeverScrollableScrollPhysics()
-                  : AlwaysScrollableScrollPhysics(),
+                  ? const NeverScrollableScrollPhysics()
+                  : const AlwaysScrollableScrollPhysics(),
               onPageChanged: (page) {
                 OnBoardNotifier.isLastPage = page == 2;
               },
-              children: [PageOne(), PageTwo(), PageThree()],
+              children: const [PageOne(), PageTwo(), PageThree()],
             ),
             Positioned(
               bottom: 50,
               left: 0,
               right: 0,
               child: OnBoardNotifier.isLastPage
-                  ? SizedBox.shrink()
+                  ? const SizedBox.shrink()
                   : Center(
                       child: SmoothPageIndicator(
                           controller: pageController,
@@ -93,7 +93,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             ),
             Positioned(
                 child: OnBoardNotifier.isLastPage
-                    ? SizedBox.shrink()
+                    ? const SizedBox.shrink()
                     : Align(
                         alignment: Alignment.bottomCenter,
                         child: Padding(
@@ -114,7 +114,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               GestureDetector(
                                 onTap: () {
                                   pageController.nextPage(
-                                      duration: Duration(milliseconds: 300),
+                                      duration:
+                                          const Duration(milliseconds: 300),
                                       curve: Curves.ease);
                                 },
                                 child: ReusableText(

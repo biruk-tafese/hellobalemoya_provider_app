@@ -29,7 +29,7 @@ class SearchWidget extends StatelessWidget {
                       color: Color(kOrange.value),
                       size: 20.h,
                     ),
-                    WidthSpacer(
+                    const WidthSpacer(
                       size: 20,
                     ),
                     ReusableText(
@@ -46,7 +46,7 @@ class SearchWidget extends StatelessWidget {
               )
             ],
           ),
-          HeightSpacer(size: 7),
+          const HeightSpacer(size: 7),
           Divider(
             color: Color(kDarkGrey.value),
             thickness: 0.5,

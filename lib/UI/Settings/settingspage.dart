@@ -70,14 +70,14 @@ class _SettingsPageState extends State<SettingsPage> {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return DeviceManagement();
+                    return const DeviceManagement();
                   },
                 ));
               }),
           SettingsContainer(
               name: "Settings",
               onTap: () {
-                Get.to(ChangeLanguage());
+                Get.to(const ChangeLanguage());
               }),
           SettingsContainer(name: "Find The Nearest", onTap: () {}),
           SettingsContainer(name: "About", onTap: () {}),

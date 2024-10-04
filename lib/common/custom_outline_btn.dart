@@ -42,7 +42,7 @@ class CustomOutlineBtn extends StatelessWidget {
       height: height.h,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: EdgeInsets.all(0),
+          padding: const EdgeInsets.all(0),
           disabledBackgroundColor: bcolor,
           backgroundColor: bcolor!, // Set the background color
           shape: RoundedRectangleBorder(

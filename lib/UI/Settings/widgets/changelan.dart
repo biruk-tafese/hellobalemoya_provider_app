@@ -65,16 +65,16 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
         children: [
           ElevatedButton(
               onPressed: () {
-                var locale = Locale("amh", "ET");
+                var locale = const Locale("amh", "ET");
                 Get.updateLocale(locale);
               },
-              child: Text("Change to amh")),
-                        ElevatedButton(
+              child: const Text("Change to amh")),
+          ElevatedButton(
               onPressed: () {
-                var locale = Locale("en", "US");
+                var locale = const Locale("en", "US");
                 Get.updateLocale(locale);
               },
-              child: Text("Change to eng"))
+              child: const Text("Change to eng"))
         ],
       ),
     );

@@ -54,10 +54,10 @@ class _MyOrdersState extends State<MyOrders> {
             text: "My Orders",
             style: appstyle(headersize, Colors.black, FontWeight.normal)),
       ),
-      body: SafeArea(
+      body: const SafeArea(
           child: SingleChildScrollView(
-            child: Column(
-                    children: [
+        child: Column(
+          children: [
             OrderTypes(
                 problem: "Fix the pipe",
                 image: "assets/images/face1.jpg",
@@ -70,9 +70,9 @@ class _MyOrdersState extends State<MyOrders> {
                 problem: "Fixed pipe",
                 image: "assets/images/face1.jpg",
                 status: "Pending"),
-                    ],
-                  ),
-          )),
+          ],
+        ),
+      )),
     );
   }
 }

@@ -20,7 +20,7 @@ class LoginNotifier extends ChangeNotifier {
   set rolePage(phone) {
     if (phone == "client") {
       print("client");
-      _rolePage = MainScreen();
+      _rolePage = const MainScreen();
     } else {
       _rolePage = null;
     }
