@@ -1,9 +1,6 @@
 import 'package:provider_app_orientation/UI/common/exports.dart';
 import 'package:provider_app_orientation/UI/order/widgets/order_types.dart';
-import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/exports.dart';
-import 'package:provider_app_orientation/common/width_spacer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +17,6 @@ class _MyOrdersState extends State<MyOrders> {
     double? toolbarheight;
     double? headersize;
 
-    double sWidth = MediaQuery.of(context).size.width;
     bool isMobile(BuildContext context) =>
         MediaQuery.of(context).size.shortestSide <= 500;
     Orientation orientaion = MediaQuery.of(context).orientation;

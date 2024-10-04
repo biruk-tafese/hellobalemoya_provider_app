@@ -8,9 +8,7 @@ import 'package:provider_app_orientation/common/custom_btn.dart';
 import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
 import 'package:provider_app_orientation/common/width_spacer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
@@ -57,6 +55,7 @@ class _OrderNowState extends State<OrderNow> {
         await showTimePicker(context: context, initialTime: TimeOfDay.now());
 
     if (pickedTime != null) {
+      // ignore: use_build_context_synchronously
       _timeController.text = pickedTime.format(context);
     }
   }
