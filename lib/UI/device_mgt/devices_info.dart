@@ -68,7 +68,7 @@ class DeviceManagement extends StatelessWidget {
                       onTap: () {
                         onBoardNotifier.isLastPage = false;
                         zoomNotifier.currentIndex = 0;
-                        Get.to(() => SplashScreen());
+                        Get.to(() => const SplashScreen());
                       },
                       child: ReusableText(
                         text: "Sign out from all devices",

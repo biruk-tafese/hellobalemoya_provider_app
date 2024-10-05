@@ -4,9 +4,7 @@ import 'package:provider_app_orientation/UI/service_provider/widgets/profile_cli
 import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/width_spacer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ServiceProvider extends StatefulWidget {

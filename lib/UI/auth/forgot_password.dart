@@ -1,16 +1,12 @@
-import 'package:provider_app_orientation/UI/auth/signup.dart';
 import 'package:provider_app_orientation/UI/auth/verify.dart';
 import 'package:provider_app_orientation/UI/search/widgets/custom_field.dart';
 
-import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:provider_app_orientation/controllers/exports.dart';
 
-import 'package:provider_app_orientation/common/app_bar.dart';
 import 'package:provider_app_orientation/common/custom_btn.dart';
 
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
-import 'package:provider_app_orientation/common/width_spacer.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -85,7 +85,7 @@ class Applicants extends StatelessWidget {
               ),
             ),
             TextSpan(
-                text: " $rating (${ratingcount})",
+                text: " $rating ($ratingcount)",
                 style:
                     appstyle(headersize - 1, Colors.black, FontWeight.normal))
           ],

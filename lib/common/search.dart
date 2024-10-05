@@ -1,6 +1,3 @@
-import 'package:provider_app_orientation/common/app_style.dart';
-import 'package:provider_app_orientation/common/reusable_text.dart';
-import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
 import 'package:provider_app_orientation/common/width_spacer.dart';

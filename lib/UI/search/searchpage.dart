@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:provider_app_orientation/constants/app_constants.dart';
 import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 

@@ -4,8 +4,6 @@ import 'package:provider_app_orientation/UI/onboarding/widgets/page_three.dart';
 import 'package:provider_app_orientation/UI/onboarding/widgets/page_two.dart';
 import 'package:flutter/material.dart';
 import 'package:provider_app_orientation/common/exports.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

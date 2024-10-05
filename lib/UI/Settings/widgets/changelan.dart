@@ -1,8 +1,6 @@
 import 'package:get/get.dart';
-import 'package:provider_app_orientation/UI/device_mgt/devices_info.dart';
 
 import 'package:provider_app_orientation/common/exports.dart';
-import 'package:provider_app_orientation/common/setting_containers.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

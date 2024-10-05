@@ -114,9 +114,9 @@ class _RegistrationPageState extends State<RegistrationPage> {
                             headersize, Color(kDark.value), FontWeight.normal),
                       ),
                       const HeightSpacer(size: 5),
-                      SizedBox(
+                      const SizedBox(
                         width: 90,
-                        child: const CircleAvatar(
+                        child: CircleAvatar(
                           radius: 40,
                           backgroundImage: AssetImage("assets/images/user.png"),
                         ),

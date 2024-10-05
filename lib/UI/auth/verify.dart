@@ -1,12 +1,10 @@
 import 'package:provider_app_orientation/UI/search/widgets/custom_field.dart';
-import 'package:provider_app_orientation/common/app_bar.dart';
 import 'package:provider_app_orientation/common/custom_btn.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:provider/provider.dart';
 
 class VerifyPassword extends StatefulWidget {
   const VerifyPassword({super.key});

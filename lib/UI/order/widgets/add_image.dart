@@ -1,10 +1,7 @@
 import 'package:provider_app_orientation/UI/common/exports.dart';
-import 'package:provider_app_orientation/common/app_style.dart';
 import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -6,7 +5,6 @@ import 'package:provider_app_orientation/UI/my_wallet/widgets/mywalletwidget.dar
 import 'package:provider_app_orientation/common/custom_icon.dart';
 import 'package:provider_app_orientation/common/exports.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
-import 'package:provider_app_orientation/constants/app_constants.dart';
 
 class MyWalletPage extends StatefulWidget {
   const MyWalletPage({super.key});

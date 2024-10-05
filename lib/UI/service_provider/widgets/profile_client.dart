@@ -1,8 +1,6 @@
 import 'package:provider_app_orientation/UI/chat/chatsclient.dart';
 import 'package:provider_app_orientation/UI/order/client_orders.dart';
-import 'package:provider_app_orientation/UI/order/order_now.dart';
 import 'package:provider_app_orientation/constants/app_constants.dart';
-import 'package:provider_app_orientation/UI/chat/chatpage.dart';
 
 import 'package:provider_app_orientation/common/app_style.dart';
 import 'package:provider_app_orientation/common/custom_btn.dart';
@@ -11,7 +9,6 @@ import 'package:provider_app_orientation/common/custom_outline_btn.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
 import 'package:provider_app_orientation/common/reusable_text.dart';
 import 'package:provider_app_orientation/common/width_spacer.dart';
-import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';

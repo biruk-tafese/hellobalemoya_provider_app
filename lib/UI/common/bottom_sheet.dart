@@ -4,7 +4,6 @@ import 'package:provider_app_orientation/UI/service_provider/service_provider.da
 import 'package:provider_app_orientation/common/custom_btn.dart';
 import 'package:provider_app_orientation/common/height_spacer.dart';
 import 'package:provider_app_orientation/common/width_spacer.dart';
-import 'package:provider_app_orientation/constants/app_constants.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
